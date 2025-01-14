@@ -1,0 +1,97 @@
+/* Container for landing page layout */
+.landing-page {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+  min-height: 75vh;
+  background-color: #f9f9f9;
+}
+
+/* Left content section */
+.content-left {
+  flex: 1;
+  max-width: 600px;
+  padding: 10px;
+}
+
+.content-left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.content-left p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.cta-button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Right image section */
+.content-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.landing-image {
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .landing-page {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content-left {
+    max-width: 100%;
+  }
+
+  .content-right {
+    max-width: 100%;
+  }
+
+  .landing-image {
+    width: 60%;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-left h1 {
+    font-size: 2rem;
+  }
+
+  .content-left p {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    padding: 6px 14px;
+    font-size: 0.9rem;
+  }
+}
